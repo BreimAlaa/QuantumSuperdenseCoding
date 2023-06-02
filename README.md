@@ -57,13 +57,14 @@ Z|ψ⟩ = |0⟩⟨0|ψ⟩ - |1⟩⟨1|ψ⟩
 
 
 ### CNOT Gate
-The CNOT gate is a two-qubit gate that flips the target qubit if and only if the control qubit is in state |1⟩. It can be represented as a controlled X gate. Mathematically, it can be applied to an arbitrary two-qubit state as follows:
+The CNOT gate, also known as the controlled-X gate, is a two-qubit gate that performs an X gate (bit flip) operation on the target qubit based on the state of the control qubit, it can be applied to an arbitrary two-qubit state as follows:
 
 CNOT(|a⟩⊗|b⟩) = |a⟩⊗|a⊕b⟩
 
-
-
 Here, ⊕ denotes addition modulo 2.
+
+The CNOT gate can be used to create entanglement between qubits. When the control qubit is in a superposition state, the CNOT gate entangles the control qubit with the target qubit. This entanglement enables quantum information processing tasks such as Superdense Coding and Quantum Teleportation.
+
 
 ## Quantum Superdense Coding
 Superdense Coding is a protocol in quantum information theory that allows two classical bits of information to be transmitted using only one qubit of communication. It exploits the entanglement and quantum properties of qubits to achieve this compression.
